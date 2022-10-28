@@ -2068,6 +2068,7 @@ button,
 	color: #fff !important;
 	text-decoration: none;
 	padding: 0.75em 2.5em 0.75em 2.5em;
+	margin-bottom: 4px;
 	background-color: #474747;
 	border: 0;
 	cursor: pointer;
@@ -2830,3 +2831,61 @@ button:active,
 	}
 }
 
+/* About me page specific css */
+.About_User {
+	width: fit-content;
+	margin: auto;
+	display: flex;
+}
+
+.About_User img {
+	width: 320px;
+	cursor: pointer;
+	border-radius: 10px;
+	position: relative;
+	z-index: 100;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.info{
+	padding: 10px 50px;
+}
+
+.info h1{
+	font-size: 80px;
+	font-weight: 500;;
+}
+
+.info p{
+	line-height: 26px;
+}
+.info a{
+	background: #4f40ff;
+	color: #fff;
+	font-size: 15px;
+	text-decoration: none;
+	display: inline-block;
+	padding: 12px 40px;
+	border-radius: 30px;
+	margin-top: 20px;
+}
+.info span{
+	color: #4f40ff;
+	font-weight: 500;
+}
+
+.sep-line{
+	width: 4px;
+	position: relative;
+}
+
+.sep-line::before, .sep-line::after{
+	content: '';
+	height: 100%;
+	width: 2px;
+	background: #333;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -1px;
+}
