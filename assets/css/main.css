@@ -331,17 +331,20 @@ br.clear {
 	margin: 0 auto;
 	max-width: 100%;
 	width: 1400px;
-	overflow-x: auto;
 	position: static;
+}
+
+.About_User {
+	width: 1400px;
 }
 
 .about-wrapper {
 	margin: 0 auto;
 	max-width: 100%;
-	width: 98%;
+	width: 100%;
 	overflow-x: auto;
 	position: relative;
-	height: 800px;
+	height: 600px;
 	justify-content: center;
 }
 
@@ -349,14 +352,16 @@ br.clear {
 
 	.container {
 		width: 1200px;
-		overflow-x: auto;
-		height: 800px;
+	}
+	
+	.About_User {
+		width: 1200px;
 	}
 
 	.about-wrapper {
-		width: 98%;
+		width: 100%;
 		overflow-x: auto;
-		height: 800px;
+		height: 600px;
 	}
 
 }
@@ -365,14 +370,16 @@ br.clear {
 
 	.container {
 		width: 960px;
-		overflow-x: auto;
-		height: 800px;
+	}
+
+	.About_User {
+		width: 960px;
 	}
 
 	.about-wrapper {
 		width: 98%;
 		overflow-x: auto;
-		height: 800px;
+		height: 600px;
 	}
 
 }
@@ -381,14 +388,16 @@ br.clear {
 
 	.container {
 		width: 100%;
-		overflow-x: auto;
-		height: 800px;
+	}
+
+	.About_User {
+		width: 1320px;
 	}
 
 	.about-wrapper {
-		width: 98%px;
+		width: 100%;
 		overflow-x: auto;
-		height: 800px;
+		height: 600px;
 	}
 
 }
@@ -397,14 +406,16 @@ br.clear {
 
 	.container {
 		width: 100%;
-		overflow-x: auto;
-		height: 800px;
+	}
+
+	.About_User {
+		width: 960px;
 	}
 
 	.about-wrapper {
-		width: 98%;
+		width: 100%;
 		overflow-x: auto;
-		height: 800px;
+		height: 600px;
 	}
 
 }
@@ -413,14 +424,16 @@ br.clear {
 
 	.container {
 		width: 100%;
-		overflow-x: auto;
-		height: 800px;
+	}
+
+	.About_User {
+		width: 960px;
 	}
 
 	.about-wrapper {
-		width: 98%;
+		width: 100%;
 		overflow-x: auto;
-		height: 800px;
+		height: 600px;
 	}
 
 }
@@ -2504,13 +2517,11 @@ button:active,
 
 	.container {
 		padding: 0 2em 0 2em;
-		overflow-x: auto;
-		height: 800px;
 	}
 
 	.about-wrapper {
 		overflow-x: auto;
-		height: 800px;
+		height: 600px;
 	}
 
 	/* Icons */
@@ -2594,13 +2605,11 @@ button:active,
 
 	.container {
 		padding: 0 2em 0 2em;
-		overflow-x: auto;
-		height: 800px;
 	}
 
 	.about-wrapper {
 		overflow-x: auto;
-		height: 800px;
+		height: 600px;
 	}
 
 	/* Item */
@@ -2797,13 +2806,11 @@ button:active,
 
 	.container {
 		padding: 0 15px 0 15px;
-		overflow-x: auto;
-		height: 800px;
 	}
 
 	.about-wrapper {
 		overflow-x: auto;
-		height: 800px;
+		height: 600px;
 	}
 
 	/* List */
@@ -2909,10 +2916,17 @@ button:active,
 	display: flex; 
 	justify-content: center;
 	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+	padding-bottom: 15px;
 }
 
 .About_User img {
-	width: 320px;
+	width: 400px;
+	height: 100%;
 	cursor: pointer;
 	border-radius: 10px;
 	position: relative;
