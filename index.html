@@ -355,20 +355,32 @@
 				<header>
 					<h2>About Me</h2>
 				</header>
-
-				<div class="About_User">
-					<img src="images/pic04.jpg">
-					<div class="info">
-						<h2>Tung Nguyen</h2>
-						<p>From: Viet Nam</p>
+				<div class="about-wrapper">
+					<div class="About_User hide-details" id="userBox">
+						<a class="close-button-left"
+							onclick="closeInfo()">&#10095;&#10095;<br />&#10095;&#10095;<br />&#10095;&#10095;<br />&#10095;&#10095;<br />&#10095;&#10095;<br />&#10095;&#10095;<br />&#10095;&#10095;<br />&#10095;&#10095;<br />&#10095;&#10095;<br />&#10095;&#10095;<br /></a>
+						<div class="sep-line-left"></div>
+						<div class="info-left">
+							<h2>Tung Nguyen</h2>
+							<p>From: Viet Nam</p>
+						</div>
+						<img src="images/pic04.jpg" onclick="openInfo()">
+						<!-- <div class="overlayIMG">
+						<div class="overlayText">
+							<p><strong>Expand</strong></p>
+						</div>
+						</div> -->
+						<div class="info-right">
+							<h2>Tung Nguyen</h2>
+							<p>From: Viet Nam</p>
+						</div>
+						<div class="sep-line-right"></div>
+						<a class="close-button-right"
+							onclick="closeInfo()">&#10094;&#10094;<br />&#10094;&#10094;<br />&#10094;&#10094;<br />&#10094;&#10094;<br />&#10094;&#10094;<br />&#10094;&#10094;<br />&#10094;&#10094;<br />&#10094;&#10094;<br />&#10094;&#10094;<br />&#10094;&#10094;<br /></a>
 					</div>
-					<div class="sep-line"></div>
-					<a class="prev"
-						onclick="">&#10094;&#10094;<br />&#10094;&#10094;<br />&#10094;&#10094;<br />&#10094;&#10094;<br />&#10094;&#10094;<br />&#10094;&#10094;<br />&#10094;&#10094;<br />&#10094;&#10094;<br /></a>
 				</div>
-
-
 				<p></p>
+
 
 			</div>
 		</section>
@@ -412,8 +424,7 @@
 
 		<!-- Copyright -->
 		<ul class="copyright">
-			<li>&copy; Untitled. All rights reserved.</li>
-			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			<li>&copy; Portfolio. All rights reserved.</li>
 		</ul>
 
 	</div>
@@ -451,6 +462,19 @@
 				slides[i].style.display = "none";
 			}
 			slides[slideIndex[num] - 1].style.display = "block";
+		}
+	</script>
+
+	<!-- Script for About Me Page animation -->
+	<script>
+		let userBox = document.getElementById("userBox");
+
+		function openInfo() {
+			userBox.classList.remove("hide-details");
+		}
+
+		function closeInfo() {
+			userBox.classList.add("hide-details");
 		}
 	</script>
 </body>
