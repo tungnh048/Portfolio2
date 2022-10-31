@@ -2969,18 +2969,20 @@ button:active,
 	opacity: 1;
 	transition: transform 1s, opacity 1s; 
 	position: relative;
+	width: 400px;
 }
 
-.info-right h1{
-	font-size: 80px;
+.info-right h3{
+	font-size: 40px;
 	font-weight: 500;
+	text-align: left;
 }
 
 .info-right p{
 	line-height: 26px;
 }
 .info-right a{
-	background: #4f40ff;
+	background: #dcff40;
 	color: #fff;
 	font-size: 15px;
 	text-decoration: none;
@@ -3000,26 +3002,37 @@ button:active,
 	opacity: 1;
 	transition: transform 1s, opacity 1s; 
 	position: relative;
+	width: 400px;
 }
 
-.info-left h1{
-	font-size: 80px;
-	font-weight: 500;;
+.info-left h3{
+	font-size: 40px;
+	font-weight: 500;
+	text-align: right;
+	margin-bottom: 10px;
 }
 
 .info-left p{
 	line-height: 26px;
+	text-align: right;
 }
+
 .info-left a{
-	background: #4f40ff;
-	color: #fff;
+	background: #ffe240;
+	color: rgb(0, 0, 0);
 	font-size: 15px;
 	text-decoration: none;
 	display: inline-block;
 	padding: 12px 40px;
 	border-radius: 30px;
 	margin-top: 20px;
+	cursor: pointer;
 }
+
+.info-left a:hover {
+	background: #e7c500;
+}
+
 .info-left span{
 	color: #4f40ff;
 	font-weight: 500;
@@ -3108,29 +3121,29 @@ button:active,
 }
 
 .hide-details .info-right{
-	transform: translateX(-410px);
+	transform: translateX(-500px);
 	opacity: 0;
 }
 
 .hide-details .info-left{
-	transform: translateX(410px);
+	transform: translateX(500px);
 	opacity: 0;
 }
 
 .hide-details .close-button-right {
-	transform: translateX(-410px);
+	transform: translateX(-500px);
 	
 }
 
 .hide-details .close-button-left {
-	transform: translateX(410px);
+	transform: translateX(500px);
 	
 }
 
 .hide-details .sep-line-right {
-	transform: translateX(-410px);
+	transform: translateX(-500px);
 }
 
 .hide-details .sep-line-left {
-	transform: translateX(410px);
+	transform: translateX(500px);
 }
