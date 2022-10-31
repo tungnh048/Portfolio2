@@ -3003,16 +3003,18 @@ button:active,
 	transition: transform 1s, opacity 1s; 
 	position: relative;
 	width: 400px;
+	overflow: auto;
 }
 
 .info-left h3{
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: 500;
 	text-align: right;
 	margin-bottom: 10px;
 }
 
 .info-left p{
+	font-size: 22px;
 	line-height: 26px;
 	text-align: right;
 }
